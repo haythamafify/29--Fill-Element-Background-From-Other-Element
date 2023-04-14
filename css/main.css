@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.product {
+  width: 400px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px #ddd;
+  text-align: center;
+  padding: 20px;
+  overflow: hidden;
+}
+.product .number {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #8bc34a;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 26px;
+  transition: 0.6s;
+}
+.product h2 {
+  margin: 15px 0;
+  transition: 0.6s;
+  font-size: 26px;
+}
+.product p {
+  transition: 0.6s;
+  line-height: 1.6;
+  font-size: 18px;
+}
+.product:hover .number {
+  box-shadow: 0 0 0 500px #8bc34a;
+}
+.product:hover p,
+.product:hover h2 {
+  color: #fff;
+}
